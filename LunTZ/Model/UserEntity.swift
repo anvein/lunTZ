@@ -20,7 +20,7 @@ struct UserEntity {
         lastName = apiDto.lastName
         phone = apiDto.phone
         gender = Gender(from: apiDto.gender)
-        avatar = Self.imageUrls.randomElement()! //apiDto.avatar (сервисы картинок заблокированы, пока так)
+        avatar = apiDto.avatar//Self.imageUrls.randomElement()! //apiDto.avatar (сервисы картинок заблокированы, пока так)
         address = "\(apiDto.address.country), \(apiDto.address.city), \(apiDto.address.streetName), \(apiDto.address.buildingNumber)"
     }
 
